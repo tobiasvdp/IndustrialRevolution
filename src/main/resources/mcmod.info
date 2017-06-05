@@ -1,0 +1,16 @@
+[
+{
+  "modid": "TRANSDUCT",
+  "name": "TRANSDUCT",
+  "description": "Getting around the world",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["tobiasvdp"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
