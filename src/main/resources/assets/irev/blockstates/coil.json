@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "irev:coil" },
+        "facing=down": { "model": "irev:coil" },
+        "facing=north": { "model": "irev:coil" },
+        "facing=south": { "model": "irev:coil" },
+        "facing=up": { "model": "irev:coil" },
+        "facing=west": { "model": "irev:coil" }
+    }
+}

@@ -2,18 +2,18 @@ package vdp.logistics.transduct.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import vdp.logistics.transduct.TransductMod;
+import vdp.logistics.transduct.IndustrialRevolutionMod;
 
-public class TransductTab extends CreativeTabs{
+public class IndustrialRevolutionTab extends CreativeTabs{
 
-	public TransductTab() {
+	public IndustrialRevolutionTab() {
 		super("Transduct");
 
 	}
 
 	@Override
 	public Item getTabIconItem() {
-		return TransductMod.transductItem;
+		return IndustrialRevolutionMod.coilItem;
 	}
 
 }
