@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "indcon:coil" },
+        "facing=down": { "model": "indcon:coil" },
+        "facing=north": { "model": "indcon:coil" },
+        "facing=south": { "model": "indcon:coil" },
+        "facing=up": { "model": "indcon:coil" },
+        "facing=west": { "model": "indcon:coil" }
+    }
+}
