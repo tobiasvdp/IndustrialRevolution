@@ -1,5 +1,6 @@
 package io.industrialmagic.general.blocks;
 
+import io.industrialmagic.IndustrialMagicMod;
 import io.industrialmagic.blocks.BlockMagicContainerBase;
 import io.industrialmagic.tile.TileWorkbench; 
 import net.minecraft.block.material.Material; 
@@ -12,6 +13,9 @@ public class BlockWorkbench extends BlockMagicContainerBase {
 		super(Material.IRON); 
 		setUnlocalizedName("magic workbench");
 		setRegistryName("magic_workbench"); 	 
+		
+		setCreativeTab(IndustrialMagicMod.tab);
+		
 	}
 
 	@Override
