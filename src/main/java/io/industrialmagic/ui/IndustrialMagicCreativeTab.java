@@ -2,8 +2,7 @@ package io.industrialmagic.ui;
 
 import io.industrialmagic.IndustrialMagicMod;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import vdp.logistics.indcon.IndustrialConjuringMod;
+import net.minecraft.item.Item; 
 
 public class IndustrialMagicCreativeTab extends CreativeTabs {
 

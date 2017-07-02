@@ -1,7 +1,8 @@
-package vdp.logistics.indcon.item;
+package io.industrialmagic.runes.item;
 
+import io.industrialmagic.IndustrialMagicMod;
+import io.industrialmagic.runes.IndustrialRunes;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockStone;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -10,18 +11,16 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import vdp.logistics.indcon.IndustrialConjuringMod;
-import vdp.logistics.indcon.blocks.BlockRune;
+import net.minecraft.world.World; 
 
 public class ItemChalk extends Item {
 
 	public ItemChalk() {
-		this.setRegistryName(IndustrialConjuringMod.MODID, "itemChalk");
+		this.setRegistryName(IndustrialMagicMod.MODID, "itemChalk");
 		this.setUnlocalizedName("Chalk");
 		this.setMaxStackSize(1);
 		this.setMaxDamage(12);
-		this.setCreativeTab(IndustrialConjuringMod.tab);
+		this.setCreativeTab(IndustrialMagicMod.tab);
 	}
 	
 	@Override
@@ -50,7 +49,7 @@ public class ItemChalk extends Item {
 			return EnumActionResult.FAIL;
 		}
 		
-		worldIn.setBlockState(runePos, IndustrialConjuringMod.blockRune.getDefaultState());
+		worldIn.setBlockState(runePos, IndustrialRunes.BlockRune.getDefaultState());
 		
 		stack.damageItem(1, playerIn);
 		

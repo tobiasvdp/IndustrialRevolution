@@ -14,8 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.registry.IForgeRegistry;
+import io.industrialmagic.RegistryUtils;
 
-public class IndustrialAlchemySubMod {
+public interface IndustrialAlchemy {
 
     public static final BlockDistiller BlockDistiller = new BlockDistiller();
 
@@ -41,7 +42,7 @@ public class IndustrialAlchemySubMod {
     public static final ItemBlock ItemDistillerPump = new ItemBlock(BlockDistillerPump);
     public static final ItemBlock ItemDistillerTank = new ItemBlock(BlockDistillerTank);
     
-	public void registerBlocks(Register<Block> event) {
+	public static void registerBlocks(Register<Block> event) {
 		event.getRegistry().registerAll(
         		BlockDistiller, 
         		BlockDistillerColumn, 
@@ -54,11 +55,11 @@ public class IndustrialAlchemySubMod {
         		BlockDistillerTank); 
 	}
 
-	public void registerItems(Register<Item> event) {
+	public static void registerItems(Register<Item> event) {
 		// TODO Auto-generated method stub
     	IForgeRegistry<Item> reg =  event.getRegistry();
 
-    	registerItemBlock(reg, 
+    	RegistryUtils.registerItemBlock(reg, 
     			ItemDistiller, 
     			ItemDistillerColumn, 
     			ItemDistillerBoiler, 
@@ -70,10 +71,5 @@ public class IndustrialAlchemySubMod {
     			ItemDistillerTank);
 	}
 
-    private static void registerItemBlock(IForgeRegistry<Item> reg, ItemBlock... items)
-    {
-    	for (ItemBlock itemBlock : items) {
-        	reg.register(itemBlock.setRegistryName(itemBlock.block.getRegistryName()));
-		}
-    }
+     
 }

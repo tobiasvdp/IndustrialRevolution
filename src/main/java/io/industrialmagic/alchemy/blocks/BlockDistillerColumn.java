@@ -1,6 +1,6 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagic.alchemy.IndustrialAlchemySubMod;
+import io.industrialmagic.alchemy.IndustrialAlchemy;
 import io.industrialmagic.attachments.AttachmentGroup;
 import io.industrialmagic.attachments.BlockAttachment;
 import io.industrialmagic.attachments.IAttachedBlock;
@@ -21,8 +21,8 @@ public class BlockDistillerColumn extends BlockDistillerBase implements IAttache
 	public AttachmentGroup[] getAttachedSides(IBlockAccess world, BlockPos pos) { 
 		// stay only if there is a distiller, or another column below
 		return new AttachmentGroup[]{
-			new AttachmentGroup(new BlockAttachment(IndustrialAlchemySubMod.BlockDistiller, EnumFacing.DOWN)), 
-			new AttachmentGroup(new BlockAttachment(IndustrialAlchemySubMod.BlockDistillerColumn, EnumFacing.DOWN))
+			new AttachmentGroup(new BlockAttachment(IndustrialAlchemy.BlockDistiller, EnumFacing.DOWN)), 
+			new AttachmentGroup(new BlockAttachment(IndustrialAlchemy.BlockDistillerColumn, EnumFacing.DOWN))
 		};
 	} 
 }

@@ -1,7 +1,8 @@
-package vdp.logistics.indcon.client.render;
+package io.industrialmagic.runes.client.render;
 
 import org.lwjgl.opengl.GL11;
 
+import io.industrialmagic.runes.tile.TileRune;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
@@ -11,7 +12,6 @@ import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.world.World;
-import vdp.logistics.indcon.tile.TileRune;
 import vdp.logistics.indcon.tile.TransductTile;
 
 public class TESRRune extends TileEntitySpecialRenderer<TileRune>{

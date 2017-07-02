@@ -1,5 +1,6 @@
-package io.industrialmagic.blocks;
+package io.industrialmagic.general.blocks;
 
+import io.industrialmagic.blocks.BlockMagicContainerBase;
 import io.industrialmagic.tile.TileWorkbench; 
 import net.minecraft.block.material.Material; 
 import net.minecraft.tileentity.TileEntity;

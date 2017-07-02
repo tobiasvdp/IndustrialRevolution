@@ -1,16 +1,20 @@
 package io.industrialmagic.client;
 
 import io.industrialmagic.common.CommonProxy;
+import io.industrialmagic.common.IProxy;
+import io.industrialmagic.runes.client.RunesClientProxy;
  
 
-public class ClientProxy extends CommonProxy {
+public class ClientProxy extends CommonProxy  {
+	
+	 
 	@Override
-	public void registerTESRs() {
-		super.registerTESRs();
+	protected IProxy[] setupProxies() 
+	{
+		return new IProxy[]
+		{
+			new RunesClientProxy()
+		};
 	}
 	
-	@Override
-	public void registerItemModels(){
-		super.registerItemModels();
-	}
 }

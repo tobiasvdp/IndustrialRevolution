@@ -1,6 +1,6 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagic.alchemy.IndustrialAlchemySubMod;
+import io.industrialmagic.alchemy.IndustrialAlchemy;
 import io.industrialmagic.attachments.AttachmentGroup;
 import io.industrialmagic.attachments.BlockAttachment;
 import io.industrialmagic.attachments.SolidSideAttachment;
@@ -26,7 +26,7 @@ public class BlockDistillerBasin extends BlockDistillerAttachmentBase
 				{
 					new AttachmentGroup(
 						new SolidSideAttachment(EnumFacing.DOWN), 
-						new BlockAttachment(IndustrialAlchemySubMod.BlockDistiller, getForward(state))
+						new BlockAttachment(IndustrialAlchemy.BlockDistiller, getForward(state))
 					) 
 				};
 	}

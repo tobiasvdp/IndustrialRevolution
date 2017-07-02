@@ -1,5 +1,7 @@
-package vdp.logistics.indcon.blocks;
+package io.industrialmagic.runes.blocks;
 
+import io.industrialmagic.IndustrialMagicMod;
+import io.industrialmagic.runes.tile.TileRune;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
@@ -11,9 +13,7 @@ import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import vdp.logistics.indcon.IndustrialConjuringMod;
-import vdp.logistics.indcon.tile.TileRune;
+import net.minecraft.world.World; 
 
 public class BlockRune extends BlockContainer {
 	
@@ -24,7 +24,7 @@ public class BlockRune extends BlockContainer {
 		setRegistryName("rune");
 		setUnlocalizedName("rune");
 
-		setCreativeTab(IndustrialConjuringMod.tab);
+		setCreativeTab(IndustrialMagicMod.tab);
 		
 		setDefaultState(this.blockState.getBaseState().withProperty(facing, EnumFacing.NORTH));
 	}

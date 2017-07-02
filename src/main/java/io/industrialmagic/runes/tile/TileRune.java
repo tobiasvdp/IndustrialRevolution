@@ -1,4 +1,4 @@
-package vdp.logistics.indcon.tile;
+package io.industrialmagic.runes.tile;
 
 import net.minecraft.tileentity.TileEntity;
 
