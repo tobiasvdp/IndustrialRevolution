@@ -1,4 +1,4 @@
-package io.industrialmagick.alchemy.tile;
+package io.industrialmagic.alchemy.tile;
 
 import net.minecraft.tileentity.TileEntity;
 

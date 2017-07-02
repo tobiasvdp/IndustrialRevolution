@@ -1,4 +1,4 @@
-package io.industrialmagic;
+package io.industrialmagic.attachments;
 
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;

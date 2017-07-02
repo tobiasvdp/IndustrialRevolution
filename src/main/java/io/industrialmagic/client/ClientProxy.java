@@ -1,6 +1,6 @@
-package io.industrialmagic.alchemy.client;
+package io.industrialmagic.client;
 
-import io.industrialmagic.alchemy.common.CommonProxy;
+import io.industrialmagic.common.CommonProxy;
  
 
 public class ClientProxy extends CommonProxy {

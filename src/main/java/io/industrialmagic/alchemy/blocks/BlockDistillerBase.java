@@ -1,7 +1,8 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagic.AttachmentManager;
-import io.industrialmagic.IAttachedBlock;
+import io.industrialmagic.attachments.AttachmentManager;
+import io.industrialmagic.attachments.IAttachedBlock;
+import io.industrialmagic.blocks.BlockMagicBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -11,29 +12,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public abstract class BlockDistillerBase extends Block {
+public abstract class BlockDistillerBase extends BlockMagicBase {
 
 	protected BlockDistillerBase(Material materialIn) {
 		super(materialIn);
 	}
 
-
-	@Override
-    public EnumBlockRenderType getRenderType(IBlockState state) 
-	{
-        return EnumBlockRenderType.MODEL;
-    }
-	
-
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
-    }
-    
-    @Override
-    public boolean isFullCube(IBlockState state) {
-    	return false;
-    }
 
 
 

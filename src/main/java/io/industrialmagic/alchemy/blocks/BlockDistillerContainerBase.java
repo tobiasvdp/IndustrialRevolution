@@ -1,7 +1,8 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagic.AttachmentManager;
-import io.industrialmagic.IAttachedBlock;
+import io.industrialmagic.attachments.AttachmentManager;
+import io.industrialmagic.attachments.IAttachedBlock;
+import io.industrialmagic.blocks.BlockMagicContainerBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -12,31 +13,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public abstract class BlockDistillerContainerBase extends BlockContainer {
+public abstract class BlockDistillerContainerBase extends BlockMagicContainerBase {
 
  
 	protected BlockDistillerContainerBase(Material materialIn) {
 		super(materialIn); 
-	}
-
-
-	@Override
-    public EnumBlockRenderType getRenderType(IBlockState state) 
-	{
-        return EnumBlockRenderType.MODEL;
-    }
-	
-
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
-    }
-    
-    @Override
-    public boolean isFullCube(IBlockState state) {
-    	return false;
-    }
-    
+	} 
     
     protected void checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
     {
@@ -46,6 +28,7 @@ public abstract class BlockDistillerContainerBase extends BlockContainer {
             worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 3);
         }
     }
+    
     public boolean canBlockStay(World worldIn, BlockPos pos)
     {
     	if(this instanceof IAttachedBlock)
@@ -66,7 +49,6 @@ public abstract class BlockDistillerContainerBase extends BlockContainer {
 	public boolean canPlaceBlockAt(World worldIn, BlockPos pos) { 
 		return canBlockStay(worldIn, pos) &&  super.canPlaceBlockAt(worldIn, pos);
 	}
-    
     
     
     

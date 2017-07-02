@@ -1,9 +1,9 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagic.AttachmentGroup;
-import io.industrialmagic.BlockAttachment; 
-import io.industrialmagic.SolidSideAttachment;
-import io.industrialmagic.alchemy.IndustrialAlchemyMod;
+import io.industrialmagic.alchemy.IndustrialAlchemySubMod;
+import io.industrialmagic.attachments.AttachmentGroup;
+import io.industrialmagic.attachments.BlockAttachment;
+import io.industrialmagic.attachments.SolidSideAttachment;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState; 
 import net.minecraft.util.EnumFacing;
@@ -26,7 +26,7 @@ public class BlockDistillerBasin extends BlockDistillerAttachmentBase
 				{
 					new AttachmentGroup(
 						new SolidSideAttachment(EnumFacing.DOWN), 
-						new BlockAttachment(IndustrialAlchemyMod.BlockDistiller, getForward(state))
+						new BlockAttachment(IndustrialAlchemySubMod.BlockDistiller, getForward(state))
 					) 
 				};
 	}

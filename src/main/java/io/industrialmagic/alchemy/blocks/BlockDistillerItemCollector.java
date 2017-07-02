@@ -1,6 +1,6 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagick.alchemy.tile.TileDistillerItemCollector;
+import io.industrialmagic.alchemy.tile.TileDistillerItemCollector;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;

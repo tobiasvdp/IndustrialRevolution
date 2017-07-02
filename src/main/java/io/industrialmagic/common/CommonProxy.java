@@ -1,4 +1,4 @@
-package io.industrialmagic.alchemy.common;
+package io.industrialmagic.common;
 
 public class CommonProxy {
 	public void registerTESRs(){

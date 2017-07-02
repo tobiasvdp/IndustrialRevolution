@@ -1,7 +1,7 @@
 package io.industrialmagic.alchemy.blocks;
 
-import io.industrialmagic.AttachmentGroup;
-import io.industrialmagic.IAttachedBlock;
+import io.industrialmagic.attachments.AttachmentGroup;
+import io.industrialmagic.attachments.IAttachedBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.IBlockState;

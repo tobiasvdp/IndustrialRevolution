@@ -6,10 +6,10 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import io.industrialmagic.AttachmentGroup;
-import io.industrialmagic.BlockAttachment;
-import io.industrialmagic.IAttachedBlock;
-import io.industrialmagick.alchemy.tile.TileDistiller;
+import io.industrialmagic.alchemy.tile.TileDistiller;
+import io.industrialmagic.attachments.AttachmentGroup;
+import io.industrialmagic.attachments.BlockAttachment;
+import io.industrialmagic.attachments.IAttachedBlock;
 
 public class BlockDistiller extends BlockDistillerContainerBase implements IAttachedBlock
 { 
