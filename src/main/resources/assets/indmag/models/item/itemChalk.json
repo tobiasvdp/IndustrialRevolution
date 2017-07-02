@@ -1,6 +1,6 @@
 {
-    "parent":"indcon:item/standard_item",
+    "parent":"indmag:item/standard_item",
     "textures": {
-        "layer0":"indcon:items/chalk"
+        "layer0":"indmag:items/chalk"
     }
 }
