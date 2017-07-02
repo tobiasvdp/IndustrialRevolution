@@ -1,7 +1,6 @@
 package io.industrialmagic;
 
 import io.industrialmagic.alchemy.IndustrialAlchemy;
-import io.industrialmagic.alchemy.blocks.*;
 import io.industrialmagic.common.CommonProxy;
 import io.industrialmagic.general.IndustrialGeneral;
 import io.industrialmagic.runes.IndustrialRunes;
