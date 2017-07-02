@@ -1,6 +1,7 @@
 package io.industrialmagic.alchemy;
 
 import io.industrialmagic.alchemy.blocks.*;
+import io.industrialmagic.alchemy.common.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.obj.OBJLoader;
@@ -11,10 +12,8 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import vdp.logistics.transduct.IndustrialRevolutionMod;
-import vdp.logistics.transduct.common.CommonProxy;
 
-@Mod(modid = IndustrialRevolutionMod.MODID, version = IndustrialRevolutionMod.VERSION)
+@Mod(modid = IndustrialAlchemyMod.MODID, version = IndustrialAlchemyMod.VERSION)
 @Mod.EventBusSubscriber
 public class IndustrialAlchemyMod {
 
@@ -34,7 +33,7 @@ public class IndustrialAlchemyMod {
     public static final BlockDistillerPump BlockDistillerPump = new BlockDistillerPump(); // 
     public static final BlockDistillerTank BlockDistillerTank = new BlockDistillerTank();
 
-    @SidedProxy(clientSide="io.industrialmagic.alchemy.ClientProxy", serverSide="io.industrialmagic.alchemy.CommonProxy")
+    @SidedProxy(clientSide="io.industrialmagic.alchemy.client.ClientProxy", serverSide="io.industrialmagic.alchemy.common.CommonProxy")
 	public static CommonProxy proxy;
 
     @EventHandler

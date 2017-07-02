@@ -44,7 +44,7 @@ public class TESRRune extends TileEntitySpecialRenderer<TileRune>{
         Tessellator tessellator = Tessellator.getInstance();
         VertexBuffer vb = tessellator.getBuffer();
         vb.begin(GL11.GL_QUADS, DefaultVertexFormats.BLOCK);
-        vb.
+        //vb.
         tessellator.draw();
 
         RenderHelper.enableStandardItemLighting();
