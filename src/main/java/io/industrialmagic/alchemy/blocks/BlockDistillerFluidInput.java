@@ -1,4 +1,4 @@
-package io.industrailmagic.alchemy.blocks;
+package io.industrialmagic.alchemy.blocks;
 
 import io.industrialmagick.alchemy.tile.TileDistillerFluidInput; 
 import net.minecraft.block.material.Material; 

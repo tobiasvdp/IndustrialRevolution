@@ -1,9 +1,9 @@
-package io.industrailmagic.alchemy.blocks;
+package io.industrialmagic.alchemy.blocks;
 
-import io.indusrialmagic.alchemy.IndustrialAlchemyMod;
 import io.industrialmagic.AttachmentGroup;
 import io.industrialmagic.BlockAttachment; 
-import io.industrialmagic.SolidSideAttachment; 
+import io.industrialmagic.SolidSideAttachment;
+import io.industrialmagic.alchemy.IndustrialAlchemyMod;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState; 
 import net.minecraft.util.EnumFacing;

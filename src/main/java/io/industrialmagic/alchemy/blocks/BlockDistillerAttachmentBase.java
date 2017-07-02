@@ -1,4 +1,4 @@
-package io.industrailmagic.alchemy.blocks;
+package io.industrialmagic.alchemy.blocks;
 
 import io.industrialmagic.AttachmentGroup;
 import io.industrialmagic.IAttachedBlock;
@@ -22,9 +22,14 @@ public abstract class BlockDistillerAttachmentBase extends BlockDistillerBase im
 	public abstract AttachmentGroup[] getAttachedSides(IBlockAccess world, BlockPos pos);
 
 	
+	
+	
 	 
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {   
+		
+		
+		
 		return this.getDefaultState().withProperty(ATTACHED_SIDE,  facing); 
 		//return super.onBlockPlaced(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).
 	}

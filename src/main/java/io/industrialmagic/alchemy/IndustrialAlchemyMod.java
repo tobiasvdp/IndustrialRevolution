@@ -1,6 +1,6 @@
-package io.indusrialmagic.alchemy;
+package io.industrialmagic.alchemy;
 
-import io.industrailmagic.alchemy.blocks.*;
+import io.industrialmagic.alchemy.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.obj.OBJLoader;

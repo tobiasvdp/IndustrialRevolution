@@ -1,20 +1,22 @@
-package io.industrailmagic.alchemy.blocks;
+package io.industrialmagic.alchemy.blocks;
 
 import io.industrialmagic.AttachmentManager;
 import io.industrialmagic.IAttachedBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
+import net.minecraft.init.Blocks; 
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public abstract class BlockDistillerBase extends Block {
+public abstract class BlockDistillerContainerBase extends BlockContainer {
 
-	protected BlockDistillerBase(Material materialIn) {
-		super(materialIn);
+ 
+	protected BlockDistillerContainerBase(Material materialIn) {
+		super(materialIn); 
 	}
 
 
@@ -34,9 +36,8 @@ public abstract class BlockDistillerBase extends Block {
     public boolean isFullCube(IBlockState state) {
     	return false;
     }
-
-
-
+    
+    
     protected void checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
     {
         if (!this.canBlockStay(worldIn, pos))
@@ -67,7 +68,6 @@ public abstract class BlockDistillerBase extends Block {
 	}
     
     
-	
-	
+    
     
 }

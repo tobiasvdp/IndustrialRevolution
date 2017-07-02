@@ -1,4 +1,4 @@
-package io.industrailmagic.alchemy.blocks;  
+package io.industrialmagic.alchemy.blocks;  
 import net.minecraft.block.material.Material; 
 import net.minecraft.init.Blocks;
 import net.minecraft.tileentity.TileEntity; 
